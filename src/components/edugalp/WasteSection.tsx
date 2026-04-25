@@ -56,7 +56,7 @@ const WasteSection: React.FC<WasteSectionProps> = ({ setActiveSection }) => {
         {/* Hero Image */}
         <div className="relative rounded-2xl overflow-hidden mb-16">
           <img 
-            src="https://d64gsuwffb70l.cloudfront.net/697531914631b7bb6a84d09a_1769288283420_3a8964e3.jpg"
+            src="/residuos.jpg"
             alt="Gestão de Resíduos"
             className="w-full h-64 sm:h-80 object-cover"
           />
