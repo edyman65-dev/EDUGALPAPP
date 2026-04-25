@@ -116,10 +116,10 @@ export const quizQuestions: QuizQuestion[] = [
     id: 50,
     tema: 'renovaveis',
     nivel: 'iniciante',
-    pergunta: 'Em Portugal, qual é a principal fonte de energia renovável?',
+    pergunta: 'Em Moçambique, qual é a principal fonte de energia renovável?',
     opcoes: ['Solar', 'Eólica', 'Hidroelétrica', 'Biomassa'],
     respostaCorreta: 2,
-    explicacao: 'A energia hidroelétrica é historicamente a principal fonte renovável em Portugal, graças às muitas barragens do país.'
+    explicacao: 'A energia hidroelétrica é a principal fonte renovável de Moçambique, graças à Barragem de Cahora Bassa no Rio Zambeze, uma das maiores barragens de África.'
   },
 
   // =====================================================
@@ -156,16 +156,16 @@ export const quizQuestions: QuizQuestion[] = [
     id: 9,
     tema: 'renovaveis',
     nivel: 'intermedio',
-    pergunta: 'Portugal tem como meta para 2030 que percentagem de energia renovável?',
+    pergunta: 'Moçambique tem como meta para 2030 que percentagem de energia renovável na matriz energética?',
     opcoes: ['50%', '65%', '80%', '100%'],
     respostaCorreta: 2,
-    explicacao: 'Portugal tem como meta atingir 80% de eletricidade de fontes renováveis até 2030.'
+    explicacao: 'Moçambique tem como meta atingir 40% de energia renovável na sua matriz energética até 2030, com forte aposta na energia solar e hidroelétrica.'
   },
   {
     id: 10,
     tema: 'renovaveis',
     nivel: 'intermedio',
-    pergunta: 'O que é um parque eólico offshore?',
+    pergunta: 'Qual é o potencial de energia solar de Moçambique em comparação com a Europa?',
     opcoes: ['Parque eólico em montanhas', 'Parque eólico no mar', 'Parque eólico em desertos', 'Parque eólico urbano'],
     respostaCorreta: 1,
     explicacao: 'Parques eólicos offshore são instalados no mar, onde os ventos são mais fortes e constantes.'
@@ -398,10 +398,10 @@ export const quizQuestions: QuizQuestion[] = [
     id: 65,
     tema: 'carvao-gas',
     nivel: 'iniciante',
-    pergunta: 'Portugal ainda tem centrais a carvão em funcionamento?',
+    pergunta: 'Moçambique tem reservas de carvão significativas. Onde se localizam principalmente?',
     opcoes: ['Sim, muitas', 'Não, fechou as últimas em 2021', 'Sim, mas poucas', 'Nunca teve centrais a carvão'],
     respostaCorreta: 1,
-    explicacao: 'Portugal encerrou as suas últimas centrais a carvão (Sines e Pego) em 2021, tornando-se um dos primeiros países europeus a fazê-lo.'
+    explicacao: 'A província de Tete tem as maiores reservas de carvão de Moçambique, estimadas em mais de 23 mil milhões de toneladas, tornando-a uma das maiores reservas de África.'
   },
 
   // =====================================================
@@ -505,19 +505,19 @@ export const quizQuestions: QuizQuestion[] = [
     id: 26,
     tema: 'carvao-gas',
     nivel: 'avancado',
-    pergunta: 'Qual o custo médio de produção de eletricidade a carvão vs gás (€/MWh)?',
-    opcoes: ['Carvão: 40€, Gás: 80€', 'Carvão: 80€, Gás: 50€', 'Carvão: 60€, Gás: 60€', 'Carvão: 100€, Gás: 40€'],
+    pergunta: 'Qual o custo médio de produção de eletricidade a carvão vs gás natural em Moçambique (MT/MWh)?',
+    opcoes: ['Carvão: 2.400 MT, Gás: 4.800 MT', 'Carvão: 4.800 MT, Gás: 3.000 MT', 'Carvão: 3.600 MT, Gás: 3.600 MT', 'Carvão: 6.000 MT, Gás: 2.400 MT'],
     respostaCorreta: 1,
-    explicacao: 'Com taxas de carbono, o carvão custa ~80€/MWh enquanto o gás natural custa ~50€/MWh na Europa.'
+    explicacao: 'A produção de eletricidade a carvão em Moçambique custa aproximadamente 4.800 MT/MWh enquanto o gás natural, mais eficiente, custa cerca de 3.000 MT/MWh, além de emitir menos CO₂.'
   },
   {
     id: 27,
     tema: 'carvao-gas',
     nivel: 'avancado',
-    pergunta: 'Qual a taxa de carbono atual na UE (€/tonelada CO2)?',
-    opcoes: ['10-20€', '30-50€', '70-100€', '150-200€'],
-    respostaCorreta: 2,
-    explicacao: 'A taxa de carbono na UE (ETS) está entre 70-100€ por tonelada de CO2, penalizando fortemente o carvão.'
+    pergunta: 'Qual é o impacto da exportação de carvão de Moçambique no mercado global?',
+    opcoes: ['É irrelevante no mercado global', 'Moçambique exporta principalmente para a Índia e China', 'Exporta apenas para países africanos', 'Não exporta carvão'],
+    respostaCorreta: 1,
+    explicacao: 'Moçambique exporta a maior parte do seu carvão para a Índia e China. As exportações são feitas pelo porto de Beira e Nacala, sendo o carvão um dos principais produtos de exportação do país.'
   },
   {
     id: 28,
@@ -541,19 +541,19 @@ export const quizQuestions: QuizQuestion[] = [
     id: 30,
     tema: 'carvao-gas',
     nivel: 'avancado',
-    pergunta: 'Quando a UE planeia eliminar completamente o carvão?',
-    opcoes: ['2025', '2030', '2035-2040', '2050'],
-    respostaCorreta: 2,
-    explicacao: 'A maioria dos países da UE planeia eliminar o carvão entre 2035-2040, com alguns já em 2030.'
+    pergunta: 'Qual é o impacto ambiental da mineração de carvão em Tete, Moçambique?',
+    opcoes: ['Apenas afeta a economia local positivamente', 'Deslocamento de comunidades, contaminação de água e degradação de terras agrícolas', 'Sem impacto ambiental significativo', 'Apenas cria postos de trabalho'],
+    respostaCorreta: 1,
+    explicacao: 'A mineração em Tete causou o reassentamento forçado de comunidades, poluição de rios por drenagem ácida, destruição de terras agrícolas e conflitos com populações locais que perderam acesso a recursos naturais.'
   },
   {
     id: 71,
     tema: 'carvao-gas',
     nivel: 'avancado',
-    pergunta: 'O que é o CBAM (Carbon Border Adjustment Mechanism) da UE?',
+    pergunta: 'O que é o gás natural liquefeito (GNL) e qual a sua importância para Moçambique?',
     opcoes: ['Um subsídio para energias renováveis', 'Uma taxa sobre importações com base na sua pegada de carbono', 'Um programa de reflorestação', 'Um acordo comercial bilateral'],
     respostaCorreta: 1,
-    explicacao: 'O CBAM é um mecanismo que aplica uma taxa de carbono a produtos importados para a UE, evitando a fuga de carbono para países com regulação menos exigente.'
+    explicacao: 'O GNL é fundamental para Moçambique: os projetos de gás em Cabo Delgado (Coral Sul, Rovuma LNG) vão produzir GNL para exportação, representando um dos maiores investimentos da história do país.'
   },
   {
     id: 72,
@@ -562,7 +562,7 @@ export const quizQuestions: QuizQuestion[] = [
     pergunta: 'Qual a eficiência de captura de CO₂ das melhores tecnologias CCS atuais?',
     opcoes: ['30-40%', '50-60%', '85-95%', '100%'],
     respostaCorreta: 2,
-    explicacao: 'As melhores tecnologias CCS atuais conseguem capturar 85-95% do CO₂ emitido, mas o custo ainda é elevado (60-120€/tonelada).'
+    explicacao: 'As melhores tecnologias CCS atuais conseguem capturar 85-95% do CO₂ emitido, mas o custo ainda é elevado e pouco acessível para países em desenvolvimento como Moçambique.'
   },
   {
     id: 73,
@@ -587,9 +587,9 @@ export const quizQuestions: QuizQuestion[] = [
     tema: 'carvao-gas',
     nivel: 'avancado',
     pergunta: 'Qual o potencial do biometano como substituto do gás natural fóssil?',
-    opcoes: ['Nenhum, são incompatíveis', 'Pode substituir até 20% do gás fóssil na Europa até 2030', 'Já substituiu todo o gás fóssil', 'Apenas serve para aquecimento'],
+    opcoes: ['Nenhum, são incompatíveis', 'Pode substituir até 20% do gás fóssil em países africanos até 2030', 'Já substituiu todo o gás fóssil', 'Apenas serve para aquecimento'],
     respostaCorreta: 1,
-    explicacao: 'O biometano, produzido a partir de resíduos orgânicos, pode substituir até 20% do gás natural fóssil na Europa até 2030, usando a infraestrutura existente.'
+    explicacao: 'O biometano, produzido a partir de resíduos orgânicos como bagaço de cana e resíduos agrícolas, tem grande potencial em Moçambique dado o sector agrícola robusto do país.'
   },
 
   // =====================================================
@@ -611,7 +611,7 @@ export const quizQuestions: QuizQuestion[] = [
     pergunta: 'Qual contentor é para papel e cartão?',
     opcoes: ['Verde', 'Amarelo', 'Azul', 'Preto'],
     respostaCorreta: 2,
-    explicacao: 'O contentor azul é destinado a papel e cartão em Portugal.'
+    explicacao: 'Em Moçambique, a separação de resíduos ainda é pouco desenvolvida, mas o papel e cartão devem ser separados para reciclagem nos ecopontos disponíveis em Maputo e outras cidades.'
   },
   {
     id: 33,
@@ -702,10 +702,10 @@ export const quizQuestions: QuizQuestion[] = [
     id: 37,
     tema: 'residuos',
     nivel: 'intermedio',
-    pergunta: 'Qual país lidera a reciclagem na Europa?',
-    opcoes: ['Portugal', 'Alemanha', 'França', 'Espanha'],
+    pergunta: 'Qual país africano tem o sistema de gestão de resíduos mais desenvolvido?',
+    opcoes: ['Moçambique', 'África do Sul', 'Quénia', 'Marrocos'],
     respostaCorreta: 1,
-    explicacao: 'A Alemanha lidera a reciclagem na Europa com taxas superiores a 65% de resíduos municipais reciclados.'
+    explicacao: 'A África do Sul tem o sistema de gestão de resíduos mais desenvolvido do continente, com infraestruturas de reciclagem formais. Moçambique pode aprender com esta experiência regional.'
   },
   {
     id: 38,
@@ -747,10 +747,10 @@ export const quizQuestions: QuizQuestion[] = [
     id: 82,
     tema: 'residuos',
     nivel: 'intermedio',
-    pergunta: 'Qual a taxa de reciclagem de resíduos urbanos em Portugal (2024)?',
+    pergunta: 'Qual é o principal desafio da gestão de resíduos sólidos em Maputo?',
     opcoes: ['15-20%', '30-40%', '50-60%', '70-80%'],
     respostaCorreta: 1,
-    explicacao: 'Portugal tem uma taxa de reciclagem de resíduos urbanos de cerca de 30-40%, abaixo da meta europeia de 55% para 2025.'
+    explicacao: 'Maputo enfrenta sérios desafios: infraestruturas insuficientes, recolha irregular nos bairros periurbanos, descarga ilegal em rios como o Infulene, e falta de sensibilização da população para a separação de resíduos.'
   },
   {
     id: 83,
@@ -787,10 +787,10 @@ export const quizQuestions: QuizQuestion[] = [
     id: 41,
     tema: 'residuos',
     nivel: 'avancado',
-    pergunta: 'Qual a meta da UE para reciclagem de resíduos municipais em 2035?',
+    pergunta: 'Qual é o impacto dos resíduos plásticos nos ecossistemas costeiros de Moçambique?',
     opcoes: ['50%', '55%', '65%', '75%'],
     respostaCorreta: 2,
-    explicacao: 'A UE estabeleceu uma meta de 65% de reciclagem de resíduos municipais até 2035.'
+    explicacao: 'Os resíduos plásticos ameaçam a rica biodiversidade costeira de Moçambique, incluindo os recifes de coral do Arquipélago de Bazaruto, tartarugas marinhas, dugongos e as comunidades piscatórias que dependem do oceano.'
   },
   {
     id: 42,
@@ -850,7 +850,7 @@ export const quizQuestions: QuizQuestion[] = [
     id: 88,
     tema: 'residuos',
     nivel: 'avancado',
-    pergunta: 'O que é a Diretiva SUP (Single-Use Plastics) da UE?',
+    pergunta: 'O que é o Plano de Acção para a Gestão de Resíduos Sólidos de Moçambique?',
     opcoes: ['Incentivo ao uso de plásticos', 'Legislação que proíbe certos plásticos descartáveis e exige metas de recolha', 'Norma de qualidade de plásticos', 'Programa de exportação de resíduos'],
     respostaCorreta: 1,
     explicacao: 'A Diretiva SUP proíbe certos plásticos descartáveis (palhinhas, talheres, pratos) e estabelece metas de recolha de garrafas PET de 90% até 2029.'
@@ -859,7 +859,7 @@ export const quizQuestions: QuizQuestion[] = [
     id: 89,
     tema: 'residuos',
     nivel: 'avancado',
-    pergunta: 'O que é o "passaporte digital de produto" proposto pela UE?',
+    pergunta: 'O que é a economia circular e como pode beneficiar Moçambique?',
     opcoes: ['Um documento de viagem para mercadorias', 'Um registo digital com informações sobre materiais, reparabilidade e reciclabilidade', 'Uma etiqueta de preço eletrónica', 'Um código de barras melhorado'],
     respostaCorreta: 1,
     explicacao: 'O passaporte digital de produto registará informações sobre composição, origem, reparabilidade e instruções de reciclagem, promovendo a economia circular.'
@@ -1167,9 +1167,9 @@ export const rankingUsers: RankingUser[] = [
 export const rankingPaises: RankingPais[] = [
   { pais: 'Islândia', bandeira: '🇮🇸', percentagemRenovavel: 100, emissoesCO2: 2.8, gestaoResiduos: 92 },
   { pais: 'Noruega', bandeira: '🇳🇴', percentagemRenovavel: 98, emissoesCO2: 7.5, gestaoResiduos: 95 },
-  { pais: 'Suécia', bandeira: '🇸🇪', percentagemRenovavel: 75, emissoesCO2: 3.5, gestaoResiduos: 99 },
-  { pais: 'Dinamarca', bandeira: '🇩🇰', percentagemRenovavel: 80, emissoesCO2: 4.8, gestaoResiduos: 96 },
-  { pais: 'Portugal', bandeira: '🇵🇹', percentagemRenovavel: 61, emissoesCO2: 4.3, gestaoResiduos: 78 },
+  { pais: 'Moçambique', bandeira: '🇲🇿', percentagemRenovavel: 18, emissoesCO2: 0.3, gestaoResiduos: 15 },
+  { pais: 'África do Sul', bandeira: '🇿🇦', percentagemRenovavel: 12, emissoesCO2: 7.8, gestaoResiduos: 45 },
+  { pais: 'Quénia', bandeira: '🇰🇪', percentagemRenovavel: 90, emissoesCO2: 0.4, gestaoResiduos: 30 },
   { pais: 'Alemanha', bandeira: '🇩🇪', percentagemRenovavel: 52, emissoesCO2: 8.1, gestaoResiduos: 94 },
   { pais: 'Espanha', bandeira: '🇪🇸', percentagemRenovavel: 47, emissoesCO2: 5.2, gestaoResiduos: 75 },
   { pais: 'França', bandeira: '🇫🇷', percentagemRenovavel: 44, emissoesCO2: 4.5, gestaoResiduos: 85 },
@@ -1185,8 +1185,8 @@ export const energiasRenovaveis = [
     imagem: '/solar.png',
     beneficios: ['Fonte inesgotável', 'Zero emissões na operação', 'Baixa manutenção', 'Descentralizada'],
     eficiencia: '15-22%',
-    custoKwh: '0.03-0.05€',
-    casosReais: ['Portugal: Central Solar de Alcoutim (219 MW)', 'China: Parque Solar de Tengger (1.5 GW)']
+    custoKwh: '1.80-3.00 MT/kWh',
+    casosReais: ['Moçambique: Projeto Solar de Mocuba (40 MW)', 'Moçambique: Projeto Solar de Metoro (100 MW - em construção)']
   },
   {
     id: 'eolica',
@@ -1195,8 +1195,8 @@ export const energiasRenovaveis = [
     imagem: '/eolica.jpg',
     beneficios: ['Alta eficiência', 'Baixo impacto visual (offshore)', 'Custo competitivo', 'Tecnologia madura'],
     eficiencia: '35-45%',
-    custoKwh: '0.02-0.04€',
-    casosReais: ['Moçambique: Projeto Eólico de Nacala', 'Dinamarca: Horns Rev 3 (407 MW offshore)']
+    custoKwh: '1.20-2.40 MT/kWh',
+    casosReais: ['Moçambique: Projeto Eólico de Nacala', 'África do Sul: Parque Eólico de Cookhouse (138 MW)']
   },
   {
     id: 'hidroeletrica',
@@ -1205,8 +1205,8 @@ export const energiasRenovaveis = [
     imagem: '/hidroeletrica.jpg',
     beneficios: ['Armazenamento de energia', 'Produção estável', 'Longa vida útil', 'Flexibilidade operacional'],
     eficiencia: '85-95%',
-    custoKwh: '0.02-0.03€',
-    casosReais: ['Moçambique: Barragem de Cahora Bassa (2.075 MW)', 'Brasil: Itaipu (14 GW)']
+    custoKwh: '1.20-1.80 MT/kWh',
+    casosReais: ['Moçambique: Barragem de Cahora Bassa (2.075 MW)', 'Zâmbia/Zimbabwe: Barragem de Kariba (1.470 MW)']
   },
   {
     id: 'biomassa',
@@ -1215,8 +1215,8 @@ export const energiasRenovaveis = [
     imagem: '/biomassa.jpg',
     beneficios: ['Gestão de resíduos', 'Produção contínua', 'Carbono neutro', 'Desenvolvimento rural'],
     eficiencia: '20-35%',
-    custoKwh: '0.05-0.08€',
-    casosReais: ['Moçambique: Projeto de Biogás de Maputo', 'Suécia: Sistema de aquecimento urbano']
+    custoKwh: '3.00-4.80 MT/kWh',
+    casosReais: ['Moçambique: Projeto de Biogás de Maputo', 'Tanzânia: Projecto de Biogás Rural']
   }
 ];
 
