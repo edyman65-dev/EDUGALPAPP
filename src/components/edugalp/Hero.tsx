@@ -12,7 +12,7 @@ const Hero: React.FC<HeroProps> = ({ setActiveSection }) => {
       <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{ 
-          backgroundImage: 'url(https://d64gsuwffb70l.cloudfront.net/697531914631b7bb6a84d09a_1769288182065_91ad126a.jpg)'
+          backgroundImage: 'url(/hero.jpg)'
         }}
       />
       {/* Overlay */}
