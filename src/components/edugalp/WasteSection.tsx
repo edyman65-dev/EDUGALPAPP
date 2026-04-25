@@ -211,7 +211,7 @@ const WasteSection: React.FC<WasteSectionProps> = ({ setActiveSection }) => {
           <div className="flex items-center justify-between mb-6">
             <div>
               <h3 className="text-2xl font-bold text-gray-900">Ranking de Gestão de Resíduos</h3>
-              <p className="text-gray-600">Países com melhor gestão de resíduos na Europa</p>
+              <p className="text-gray-600">Países da África Austral - Gestão de Resíduos</p>
             </div>
             <Globe className="w-8 h-8 text-orange-500" />
           </div>
