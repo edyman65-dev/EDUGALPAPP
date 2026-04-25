@@ -22,8 +22,8 @@ const CoalGasSection: React.FC<CoalGasSectionProps> = ({ setActiveSection }) => 
   const comparisons = [
     {
       label: 'Custo por kWh',
-      carvao: `${carvao.custoKwh}€`,
-      gas: `${gasNatural.custoKwh}€`,
+      carvao: `${carvao.custoKwh} MT/kWh`,
+      gas: `${gasNatural.custoKwh} MT/kWh`,
       icon: DollarSign,
       gasWins: true
     },
@@ -194,7 +194,7 @@ const CoalGasSection: React.FC<CoalGasSectionProps> = ({ setActiveSection }) => 
               <div className="space-y-3">
                 <div className="flex justify-between items-center">
                   <span className="text-gray-600">Custo Total</span>
-                  <span className="text-xl font-bold text-gray-900">{custoCarvao.toFixed(2)}€</span>
+                  <span className="text-xl font-bold text-gray-900">{custoCarvao.toFixed(2)} MT</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-gray-600">Emissões CO₂</span>
@@ -217,7 +217,7 @@ const CoalGasSection: React.FC<CoalGasSectionProps> = ({ setActiveSection }) => 
               <div className="space-y-3">
                 <div className="flex justify-between items-center">
                   <span className="text-gray-600">Custo Total</span>
-                  <span className="text-xl font-bold text-green-600">{custoGas.toFixed(2)}€</span>
+                  <span className="text-xl font-bold text-green-600">{custoGas.toFixed(2)} MT</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-gray-600">Emissões CO₂</span>
@@ -232,7 +232,7 @@ const CoalGasSection: React.FC<CoalGasSectionProps> = ({ setActiveSection }) => 
             <h4 className="text-lg font-semibold mb-4">Com Gás Natural, você poupa:</h4>
             <div className="grid grid-cols-2 gap-6">
               <div>
-                <div className="text-3xl font-bold">{poupanca.toFixed(2)}€</div>
+                <div className="text-3xl font-bold">{poupanca.toFixed(2)} MT</div>
                 <div className="text-green-100 text-sm">em custos</div>
               </div>
               <div>
