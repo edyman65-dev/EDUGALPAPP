@@ -85,7 +85,7 @@ const CoalGasSection: React.FC<CoalGasSectionProps> = ({ setActiveSection }) => 
         {/* Hero Comparison Image */}
         <div className="relative rounded-2xl overflow-hidden mb-16">
           <img 
-            src="https://d64gsuwffb70l.cloudfront.net/697531914631b7bb6a84d09a_1769288269270_cffd7506.jpg"
+            src="/carvao-gas.jpg"
             alt="Carvão vs Gás Natural"
             className="w-full h-64 sm:h-80 object-cover"
           />
