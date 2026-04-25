@@ -10,6 +10,7 @@ import DashboardCards from './edugalp/DashboardCards';
 import RenewableSection from './edugalp/RenewableSection';
 import CoalGasSection from './edugalp/CoalGasSection';
 import WasteSection from './edugalp/WasteSection';
+import WaterSection from './edugalp/WaterSection';
 import QuizSection from './edugalp/QuizSection';
 import RankingsSection from './edugalp/RankingsSection';
 import CertificateSection from './edugalp/CertificateSection';
@@ -32,7 +33,8 @@ const AppLayout: React.FC = () => {
   const progress = {
     renovaveis: moduleProgress.find(m => m.module_id === 'renovaveis')?.progress_percent || 0,
     carvaoGas: moduleProgress.find(m => m.module_id === 'carvao-gas')?.progress_percent || 0,
-    residuos: moduleProgress.find(m => m.module_id === 'residuos')?.progress_percent || 0
+    residuos: moduleProgress.find(m => m.module_id === 'residuos')?.progress_percent || 0,
+    agua: moduleProgress.find(m => m.module_id === 'agua')?.progress_percent || 0
   };
 
   // Handle score updates from quizzes (for non-logged users)
@@ -67,14 +69,14 @@ const AppLayout: React.FC = () => {
                 <div className="text-center mb-12">
                   <h2 className="text-3xl font-bold text-gray-900 mb-4">Porquê Aprender Sobre Energia?</h2>
                   <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                    A transição energética é um dos maiores desafios do nosso tempo. Compreender as opções disponíveis é essencial para tomar decisões informadas.
+                    Moçambique enfrenta desafios energéticos e hídricos únicos. Compreender estes recursos é essencial para o desenvolvimento sustentável do país.
                   </p>
                 </div>
                 
                 <div className="grid md:grid-cols-4 gap-6">
                   <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-6 text-center">
-                    <div className="text-4xl font-bold text-green-600 mb-2">61%</div>
-                    <div className="text-gray-600">Eletricidade renovável em Portugal (2024)</div>
+                    <div className="text-4xl font-bold text-green-600 mb-2">17%</div>
+                    <div className="text-gray-600">Acesso a eletricidade em Moçambique</div>
                   </div>
                   <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-6 text-center">
                     <div className="text-4xl font-bold text-blue-600 mb-2">50%</div>
@@ -85,8 +87,8 @@ const AppLayout: React.FC = () => {
                     <div className="text-gray-600">Toneladas de plástico nos oceanos/ano</div>
                   </div>
                   <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-6 text-center">
-                    <div className="text-4xl font-bold text-purple-600 mb-2">2050</div>
-                    <div className="text-gray-600">Meta UE para neutralidade carbónica</div>
+                    <div className="text-4xl font-bold text-purple-600 mb-2">2030</div>
+                    <div className="text-gray-600">Meta ODS para água e saneamento</div>
                   </div>
                 </div>
               </div>
@@ -258,6 +260,9 @@ const AppLayout: React.FC = () => {
       
       case 'residuos':
         return <WasteSection setActiveSection={setActiveSection} />;
+      
+      case 'agua':
+        return <WaterSection setActiveSection={setActiveSection} />;
       
       case 'quizzes':
         return <QuizSection onScoreUpdate={handleScoreUpdate} onOpenAuth={handleOpenAuth} />;
