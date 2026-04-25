@@ -19,7 +19,7 @@ const DashboardCards: React.FC<DashboardCardsProps> = ({ setActiveSection, progr
       iconColor: 'text-green-600',
       progress: progress.renovaveis,
       topics: ['Solar', 'Eólica', 'Hidroelétrica', 'Biomassa'],
-      image: 'https://d64gsuwffb70l.cloudfront.net/697531914631b7bb6a84d09a_1769288205616_88c6392b.png'
+      image: '/solar.png'
     },
     {
       id: 'carvao-gas',
@@ -32,7 +32,7 @@ const DashboardCards: React.FC<DashboardCardsProps> = ({ setActiveSection, progr
       iconColor: 'text-orange-600',
       progress: progress.carvaoGas,
       topics: ['Custos', 'Emissões CO₂', 'Eficiência', 'Simulador'],
-      image: 'https://d64gsuwffb70l.cloudfront.net/697531914631b7bb6a84d09a_1769288269270_cffd7506.jpg'
+      image: '/carvao-gas.jpg'
     },
     {
       id: 'residuos',
@@ -45,7 +45,7 @@ const DashboardCards: React.FC<DashboardCardsProps> = ({ setActiveSection, progr
       iconColor: 'text-cyan-600',
       progress: progress.residuos,
       topics: ['3Rs', 'Orgânicos', 'Plásticos', 'Economia Circular'],
-      image: 'https://d64gsuwffb70l.cloudfront.net/697531914631b7bb6a84d09a_1769288283420_3a8964e3.jpg'
+      image: '/residuos.jpg'
     }
   ];
 
