@@ -21,11 +21,14 @@ const QuizSection: React.FC<QuizSectionProps> = ({ onScoreUpdate, onOpenAuth }) 
   const [quizCompleted, setQuizCompleted] = useState(false);
   const [filteredQuestions, setFilteredQuestions] = useState<QuizQuestion[]>([]);
   const [lives, setLives] = useState(3);
+  const [showConfirm, setShowConfirm] = useState(false);
+  const [pendingAnswer, setPendingAnswer] = useState<number | null>(null);
 
   const temas = [
     { id: 'renovaveis', nome: 'Energias Renováveis', cor: 'bg-green-500', icon: '☀️' },
     { id: 'carvao-gas', nome: 'Carvão vs Gás', cor: 'bg-orange-500', icon: '🔥' },
-    { id: 'residuos', nome: 'Gestão de Resíduos', cor: 'bg-cyan-500', icon: '♻️' }
+    { id: 'residuos', nome: 'Gestão de Resíduos', cor: 'bg-cyan-500', icon: '♻️' },
+    { id: 'agua', nome: 'Consumo Responsável de Água', cor: 'bg-blue-500', icon: '💧' }
   ];
 
   const niveis = [
@@ -51,12 +54,19 @@ const QuizSection: React.FC<QuizSectionProps> = ({ onScoreUpdate, onOpenAuth }) 
   };
 
   const handleAnswer = (answerIndex: number) => {
-    if (showResult) return;
+    if (showResult || showConfirm) return;
     setSelectedAnswer(answerIndex);
+    setPendingAnswer(answerIndex);
+    setShowConfirm(true);
+  };
+
+  const confirmAnswer = () => {
+    if (pendingAnswer === null) return;
+    setShowConfirm(false);
     setShowResult(true);
 
     const currentQuestion = filteredQuestions[currentQuestionIndex];
-    const isCorrect = answerIndex === currentQuestion.respostaCorreta;
+    const isCorrect = pendingAnswer === currentQuestion.respostaCorreta;
     
     if (isCorrect) {
       const pontosNivel = niveis.find(n => n.id === selectedNivel)?.pontos || 10;
@@ -65,6 +75,12 @@ const QuizSection: React.FC<QuizSectionProps> = ({ onScoreUpdate, onOpenAuth }) 
     } else {
       setLives(prev => prev - 1);
     }
+  };
+
+  const cancelAnswer = () => {
+    setShowConfirm(false);
+    setSelectedAnswer(null);
+    setPendingAnswer(null);
   };
 
   const nextQuestion = async () => {
@@ -102,6 +118,8 @@ const QuizSection: React.FC<QuizSectionProps> = ({ onScoreUpdate, onOpenAuth }) 
     setQuizCompleted(false);
     setSelectedAnswer(null);
     setShowResult(false);
+    setShowConfirm(false);
+    setPendingAnswer(null);
   };
 
   const currentQuestion = filteredQuestions[currentQuestionIndex];
@@ -435,6 +453,29 @@ const QuizSection: React.FC<QuizSectionProps> = ({ onScoreUpdate, onOpenAuth }) 
             }`}>
               <h4 className="font-semibold text-gray-900 mb-1">Explicação:</h4>
               <p className="text-gray-700 text-sm">{currentQuestion.explicacao}</p>
+            </div>
+          )}
+
+          {/* Confirmation Dialog */}
+          {showConfirm && (
+            <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-4 mb-4">
+              <p className="text-gray-800 font-semibold text-center mb-3">
+                Tem a certeza da sua resposta?
+              </p>
+              <div className="flex gap-3">
+                <button
+                  onClick={cancelAnswer}
+                  className="flex-1 py-3 rounded-xl border-2 border-gray-300 text-gray-700 font-semibold hover:bg-gray-100 transition-colors"
+                >
+                  Alterar
+                </button>
+                <button
+                  onClick={confirmAnswer}
+                  className="flex-1 py-3 rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-semibold transition-colors"
+                >
+                  Confirmar
+                </button>
+              </div>
             </div>
           )}
 
