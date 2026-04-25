@@ -2,7 +2,7 @@
 
 export interface QuizQuestion {
   id: number;
-  tema: 'renovaveis' | 'carvao-gas' | 'residuos';
+  tema: 'renovaveis' | 'carvao-gas' | 'residuos' | 'agua';
   nivel: 'iniciante' | 'intermedio' | 'avancado';
   pergunta: string;
   opcoes: string[];
@@ -62,10 +62,10 @@ export const quizQuestions: QuizQuestion[] = [
     id: 4,
     tema: 'renovaveis',
     nivel: 'iniciante',
-    pergunta: 'Qual país é líder mundial em energia solar?',
-    opcoes: ['Portugal', 'China', 'Brasil', 'Rússia'],
+    pergunta: 'Qual país africano tem maior potencial de energia solar?',
+    opcoes: ['África do Sul', 'Moçambique', 'Egipto', 'Nigéria'],
     respostaCorreta: 1,
-    explicacao: 'A China é o maior produtor e consumidor de energia solar do mundo, com mais de 300 GW de capacidade instalada.'
+    explicacao: 'Moçambique tem um dos maiores potenciais solares de África, com mais de 3.000 horas de sol por ano, tornando-o ideal para energia fotovoltaica.'
   },
   {
     id: 5,
@@ -872,6 +872,282 @@ export const quizQuestions: QuizQuestion[] = [
     opcoes: ['É positivo pois cria emprego', 'Transfere poluição, causa problemas de saúde e contaminação ambiental nos países recetores', 'Não tem impacto significativo', 'Melhora a reciclagem global'],
     respostaCorreta: 1,
     explicacao: 'A exportação de resíduos transfere o problema ambiental para países com menos capacidade de tratamento, causando poluição, problemas de saúde e contaminação de solos e águas.'
+  },
+  // =====================================================
+  // CONSUMO RESPONSÁVEL DE ÁGUA
+  // =====================================================
+  // INICIANTE
+  {
+    id: 91,
+    tema: 'agua',
+    nivel: 'iniciante',
+    pergunta: 'Qual percentagem da água na Terra é doce e acessível para consumo humano?',
+    opcoes: ['50%', '25%', 'Menos de 1%', '10%'],
+    respostaCorreta: 2,
+    explicacao: 'Apenas cerca de 0,3% da água doce do planeta está disponível para consumo humano. A maioria está nos glaciares ou em aquíferos profundos.'
+  },
+  {
+    id: 92,
+    tema: 'agua',
+    nivel: 'iniciante',
+    pergunta: 'Em Moçambique, qual é o principal desafio relacionado com a água?',
+    opcoes: ['Excesso de chuva', 'Falta de acesso a água potável segura', 'Água demasiado fria', 'Custo zero da água'],
+    respostaCorreta: 1,
+    explicacao: 'Moçambique enfrenta sérios desafios de acesso a água potável, especialmente em zonas rurais, onde muitas comunidades dependem de fontes não tratadas.'
+  },
+  {
+    id: 93,
+    tema: 'agua',
+    nivel: 'iniciante',
+    pergunta: 'Qual atividade consome mais água a nível global?',
+    opcoes: ['Uso doméstico', 'Indústria', 'Agricultura', 'Turismo'],
+    respostaCorreta: 2,
+    explicacao: 'A agricultura é responsável por cerca de 70% do consumo mundial de água doce, principalmente através da irrigação de culturas.'
+  },
+  {
+    id: 94,
+    tema: 'agua',
+    nivel: 'iniciante',
+    pergunta: 'Quantos litros de água são necessários para produzir 1 kg de arroz?',
+    opcoes: ['100 litros', '500 litros', '1.500 litros', '50 litros'],
+    respostaCorreta: 2,
+    explicacao: 'Produzir 1 kg de arroz requer aproximadamente 1.500 litros de água. Por isso, os nossos hábitos alimentares têm grande impacto no consumo de água.'
+  },
+  {
+    id: 95,
+    tema: 'agua',
+    nivel: 'iniciante',
+    pergunta: 'O que significa "água virtual"?',
+    opcoes: ['Água em computadores', 'Água usada para produzir um produto', 'Água mineral cara', 'Água purificada digitalmente'],
+    respostaCorreta: 1,
+    explicacao: 'Água virtual é a quantidade de água utilizada na produção de um bem ou serviço. Por exemplo, uma t-shirt de algodão requer cerca de 2.700 litros de água virtual.'
+  },
+  {
+    id: 96,
+    tema: 'agua',
+    nivel: 'iniciante',
+    pergunta: 'Qual rio é fundamental para o abastecimento de água em Moçambique?',
+    opcoes: ['Rio Nilo', 'Rio Zambeze', 'Rio Congo', 'Rio Limpopo'],
+    respostaCorreta: 1,
+    explicacao: 'O Rio Zambeze é um dos mais importantes de Moçambique, alimentando a Barragem de Cahora Bassa e abastecendo comunidades ao longo do seu curso.'
+  },
+  {
+    id: 97,
+    tema: 'agua',
+    nivel: 'iniciante',
+    pergunta: 'Qual destes hábitos poupa mais água em casa?',
+    opcoes: ['Deixar a torneira aberta ao escovar os dentes', 'Tomar banho de banheira', 'Reparar fugas de água', 'Lavar roupa com pouca roupa na máquina'],
+    respostaCorreta: 2,
+    explicacao: 'Uma torneira a pingar pode desperdiçar até 30 litros por dia. Reparar fugas é uma das formas mais eficazes de poupar água.'
+  },
+  {
+    id: 98,
+    tema: 'agua',
+    nivel: 'iniciante',
+    pergunta: 'O que é a "pegada hídrica"?',
+    opcoes: ['A marca que a água deixa no chão', 'O total de água usado para produzir o que consumimos', 'A qualidade da água de um país', 'A velocidade da água num rio'],
+    respostaCorreta: 1,
+    explicacao: 'A pegada hídrica mede toda a água utilizada direta e indiretamente por uma pessoa, empresa ou país, incluindo a água virtual dos produtos consumidos.'
+  },
+  {
+    id: 99,
+    tema: 'agua',
+    nivel: 'iniciante',
+    pergunta: 'Em Moçambique, qual percentagem da população urbana tem acesso a saneamento melhorado?',
+    opcoes: ['Menos de 30%', '75%', '90%', '100%'],
+    respostaCorreta: 0,
+    explicacao: 'Menos de 30% da população urbana moçambicana tem acesso a saneamento melhorado, tornando a gestão da água e saneamento um desafio prioritário.'
+  },
+  {
+    id: 100,
+    tema: 'agua',
+    nivel: 'iniciante',
+    pergunta: 'Quantos litros de água por pessoa por dia são considerados o mínimo para necessidades básicas, segundo a ONU?',
+    opcoes: ['5 litros', '50 litros', '200 litros', '500 litros'],
+    respostaCorreta: 1,
+    explicacao: 'A ONU considera que 50 litros por pessoa por dia são o mínimo para necessidades básicas como beber, cozinhar e higiene.'
+  },
+  // INTERMÉDIO
+  {
+    id: 101,
+    tema: 'agua',
+    nivel: 'intermedio',
+    pergunta: 'O que é a dessalinização da água?',
+    opcoes: ['Processo de adicionar sal à água', 'Processo de remover o sal da água do mar para torná-la potável', 'Processo de filtrar água com sal', 'Processo de congelar água salgada'],
+    respostaCorreta: 1,
+    explicacao: 'A dessalinização remove o sal da água do mar, tornando-a potável. É usada em países com escassez de água doce, mas requer muita energia.'
+  },
+  {
+    id: 102,
+    tema: 'agua',
+    nivel: 'intermedio',
+    pergunta: 'O que é a recarga de aquíferos?',
+    opcoes: ['Bombear água para o subsolo artificialmente', 'O processo natural pelo qual a chuva reabastece as águas subterrâneas', 'Adicionar produtos químicos à água', 'Construir barragens subterrâneas'],
+    respostaCorreta: 1,
+    explicacao: 'A recarga de aquíferos é o processo pelo qual a água da chuva infiltra o solo e reabastece as reservas de água subterrânea. O desflorestamento reduz drasticamente este processo.'
+  },
+  {
+    id: 103,
+    tema: 'agua',
+    nivel: 'intermedio',
+    pergunta: 'Qual é o impacto das alterações climáticas no ciclo da água em Moçambique?',
+    opcoes: ['Aumento da precipitação regular', 'Mais ciclones, secas prolongadas e padrões irregulares de chuva', 'Sem impacto significativo', 'Redução das temperaturas'],
+    respostaCorreta: 1,
+    explicacao: 'Moçambique é um dos países mais vulneráveis às alterações climáticas. Enfrenta ciclones cada vez mais intensos, secas prolongadas no sul e padrões de chuva imprevisíveis que afetam o acesso à água.'
+  },
+  {
+    id: 104,
+    tema: 'agua',
+    nivel: 'intermedio',
+    pergunta: 'O que é a irrigação por gotejamento?',
+    opcoes: ['Irrigação por inundação dos campos', 'Sistema que leva água diretamente às raízes das plantas, poupando até 70% de água', 'Irrigação por aspersores aéreos', 'Irrigação manual com regadores'],
+    respostaCorreta: 1,
+    explicacao: 'A irrigação por gotejamento entrega água diretamente às raízes das plantas em pequenas quantidades, reduzindo a evaporação e podendo poupar até 70% de água comparado à irrigação tradicional.'
+  },
+  {
+    id: 105,
+    tema: 'agua',
+    nivel: 'intermedio',
+    pergunta: 'Qual é a principal causa da contaminação dos recursos hídricos em Moçambique?',
+    opcoes: ['Chuva ácida industrial', 'Falta de saneamento, lixo e práticas agrícolas inadequadas', 'Excesso de minerais naturais', 'Poluição marítima internacional'],
+    respostaCorreta: 1,
+    explicacao: 'Em Moçambique, a contaminação da água é principalmente causada pela falta de infraestruturas de saneamento, deposição de lixo em rios e uso excessivo de pesticidas na agricultura.'
+  },
+  {
+    id: 106,
+    tema: 'agua',
+    nivel: 'intermedio',
+    pergunta: 'O que é a "colheita de água da chuva"?',
+    opcoes: ['Dança tradicional durante chuvas', 'Sistema de captação e armazenamento de água da chuva para uso posterior', 'Medição da quantidade de chuva', 'Processo de purificação da chuva'],
+    respostaCorreta: 1,
+    explicacao: 'A colheita de água da chuva capta e armazena a água das chuvas nos telhados ou superfícies impermeáveis. É uma solução de baixo custo muito utilizada em zonas rurais de Moçambique.'
+  },
+  {
+    id: 107,
+    tema: 'agua',
+    nivel: 'intermedio',
+    pergunta: 'Qual é o Objetivo de Desenvolvimento Sustentável (ODS) relacionado com água e saneamento?',
+    opcoes: ['ODS 4 - Educação', 'ODS 6 - Água e Saneamento', 'ODS 13 - Ação Climática', 'ODS 2 - Fome Zero'],
+    respostaCorreta: 1,
+    explicacao: 'O ODS 6 visa garantir a disponibilidade e gestão sustentável de água e saneamento para todos até 2030. Moçambique enfrenta grandes desafios para atingir esta meta.'
+  },
+  {
+    id: 108,
+    tema: 'agua',
+    nivel: 'intermedio',
+    pergunta: 'Quantos litros de água são desperdiçados por uma sanita com fuga por dia?',
+    opcoes: ['1-2 litros', '5-10 litros', 'Até 200 litros', '1.000 litros'],
+    respostaCorreta: 2,
+    explicacao: 'Uma sanita com fuga pode desperdiçar até 200 litros de água por dia — o equivalente à necessidade diária mínima de 4 pessoas segundo a ONU.'
+  },
+  {
+    id: 109,
+    tema: 'agua',
+    nivel: 'intermedio',
+    pergunta: 'O que é o tratamento de águas residuais?',
+    opcoes: ['Processo de criar água artificial', 'Processo de limpar e reutilizar águas usadas antes de as devolver à natureza', 'Processo de armazenar água da chuva', 'Processo de dessalinização'],
+    respostaCorreta: 1,
+    explicacao: 'O tratamento de águas residuais remove contaminantes da água usada em casas e indústrias antes de a devolver ao ambiente, protegendo rios, lagos e oceanos.'
+  },
+  {
+    id: 110,
+    tema: 'agua',
+    nivel: 'intermedio',
+    pergunta: 'Qual é o impacto da desflorestação no ciclo da água em Moçambique?',
+    opcoes: ['Aumenta as reservas de água subterrânea', 'Reduz a infiltração de água, aumenta erosão e diminui caudais dos rios', 'Sem impacto no ciclo da água', 'Melhora a qualidade da água'],
+    respostaCorreta: 1,
+    explicacao: 'A desflorestação em Moçambique reduz drasticamente a capacidade do solo de absorver água, causando erosão, inundações repentinas e redução dos caudais dos rios na época seca.'
+  },
+  // AVANÇADO
+  {
+    id: 111,
+    tema: 'agua',
+    nivel: 'avancado',
+    pergunta: 'O que é a "diplomacia da água" e qual a sua importância para Moçambique?',
+    opcoes: ['Exportação de água para outros países', 'Gestão negociada de bacias hidrográficas partilhadas entre países', 'Construção de aquedutos diplomáticos', 'Tratados sobre chuva artificial'],
+    respostaCorreta: 1,
+    explicacao: 'Moçambique partilha bacias hidrográficas com vários países (Zâmbia, Zimbabwe, Malawi). A diplomacia da água é essencial para gerir conflitos e garantir uso equitativo de rios como o Zambeze e Limpopo.'
+  },
+  {
+    id: 112,
+    tema: 'agua',
+    nivel: 'avancado',
+    pergunta: 'O que é a "economia circular da água"?',
+    opcoes: ['Vender água em círculos comerciais', 'Sistema onde a água é continuamente reutilizada, reciclada e regenerada minimizando desperdício', 'Ciclo natural da água sem intervenção humana', 'Sistema de pagamento circular para água'],
+    respostaCorreta: 1,
+    explicacao: 'A economia circular da água propõe que a água seja tratada como recurso valioso, com reutilização de águas residuais tratadas para irrigação, indústria ou recarga de aquíferos, reduzindo a extração de fontes naturais.'
+  },
+  {
+    id: 113,
+    tema: 'agua',
+    nivel: 'avancado',
+    pergunta: 'Qual é o impacto das minas de carvão em Tete sobre os recursos hídricos de Moçambique?',
+    opcoes: ['Melhora a qualidade da água subterrânea', 'Pode causar contaminação de aquíferos, alteração do curso de rios e conflitos com comunidades locais', 'Não tem qualquer impacto nos recursos hídricos', 'Cria novos reservatórios de água doce'],
+    respostaCorreta: 1,
+    explicacao: 'A exploração mineira em Tete levanta sérias preocupações: drenagem ácida de minas pode contaminar aquíferos, o reassentamento de comunidades afeta o acesso à água e as operações de lavagem do carvão consomem grandes volumes de água.'
+  },
+  {
+    id: 114,
+    tema: 'agua',
+    nivel: 'avancado',
+    pergunta: 'O que são "soluções baseadas na natureza" para gestão da água?',
+    opcoes: ['Construção de mais barragens', 'Uso de ecossistemas naturais como zonas húmidas e florestas para regular o ciclo da água', 'Uso exclusivo de tecnologia avançada', 'Privatização da água'],
+    respostaCorreta: 1,
+    explicacao: 'Soluções baseadas na natureza usam ecossistemas saudáveis (florestas de mangal, zonas húmidas, recarga de aquíferos) para purificar, armazenar e regular a água — mais baratas e resilientes que infraestruturas artificiais.'
+  },
+  {
+    id: 115,
+    tema: 'agua',
+    nivel: 'avancado',
+    pergunta: 'Como a gestão da Barragem de Cahora Bassa afeta as comunidades a jusante do Zambeze?',
+    opcoes: ['Não tem qualquer efeito nas comunidades', 'As variações no caudal afetam a pesca, agricultura de aluvião e ecossistemas do delta', 'Aumenta sempre o acesso à água das comunidades', 'Apenas afeta a produção de eletricidade'],
+    respostaCorreta: 1,
+    explicacao: 'As descargas da barragem de Cahora Bassa afetam diretamente as cheias naturais do Zambeze, que fertilizavam as planícies aluviais. A gestão da barragem precisa equilibrar produção de energia com as necessidades das comunidades e ecossistemas a jusante.'
+  },
+  {
+    id: 116,
+    tema: 'agua',
+    nivel: 'avancado',
+    pergunta: 'O que é o "stress hídrico" e como se mede?',
+    opcoes: ['A pressão da água numa conduta', 'Relação entre a procura de água e a disponibilidade local; considera-se stress quando a procura supera 40% da disponibilidade', 'O impacto psicológico da falta de água', 'A temperatura da água num rio'],
+    respostaCorreta: 1,
+    explicacao: 'O stress hídrico ocorre quando a procura de água supera a disponibilidade. Mede-se pela razão entre extração e disponibilidade renovável. O sul de Moçambique, partilhando o Limpopo com outros países, enfrenta crescente stress hídrico.'
+  },
+  {
+    id: 117,
+    tema: 'agua',
+    nivel: 'avancado',
+    pergunta: 'Qual é a relação entre segurança alimentar e gestão da água em Moçambique?',
+    opcoes: ['Não existe relação entre os dois', 'A escassez de água compromete diretamente a irrigação, reduz colheitas e aumenta insegurança alimentar', 'Mais água significa sempre mais alimentos', 'A segurança alimentar depende apenas do clima'],
+    respostaCorreta: 1,
+    explicacao: 'Em Moçambique, onde a maioria da população depende da agricultura de subsistência, a falta de água para irrigação pode devastar colheitas. As secas recorrentes no sul e centro já causaram crises alimentares severas.'
+  },
+  {
+    id: 118,
+    tema: 'agua',
+    nivel: 'avancado',
+    pergunta: 'O que é a tarifação progressiva da água e qual o seu objetivo?',
+    opcoes: ['Cobrar mais pela água de pior qualidade', 'Sistema onde quem consome mais paga proporcionalmente mais, incentivando a poupança', 'Sistema onde os preços sobem progressivamente todos os anos', 'Sistema de pagamento em prestações'],
+    respostaCorreta: 1,
+    explicacao: 'A tarifação progressiva cobra tarifas mais elevadas para consumos acima de um limiar básico. Garante acesso acessível para necessidades básicas enquanto desincentiva o desperdício e subsidia os consumidores de baixo rendimento.'
+  },
+  {
+    id: 119,
+    tema: 'agua',
+    nivel: 'avancado',
+    pergunta: 'Como os ciclones que afetam Moçambique impactam os recursos hídricos a longo prazo?',
+    opcoes: ['Apenas causam inundações temporárias sem impacto duradouro', 'Destroem infraestruturas de água, contaminam fontes, causam erosão e afetam aquíferos costeiros com intrusão salina', 'Aumentam as reservas de água doce de forma permanente', 'Sem impacto nos recursos hídricos subterrâneos'],
+    respostaCorreta: 1,
+    explicacao: 'Ciclones como o Idai (2019) e Kenneth destruíram sistemas de abastecimento de água, contaminaram fontes com resíduos e carcaças, causaram erosão severa e a intrusão de água salgada nos aquíferos costeiros, com impactos que duram anos.'
+  },
+  {
+    id: 120,
+    tema: 'agua',
+    nivel: 'avancado',
+    pergunta: 'O que é a "pegada hídrica cinzenta" e qual a sua relevância para Moçambique?',
+    opcoes: ['A cor da água contaminada', 'O volume de água doce necessário para diluir poluentes até níveis aceitáveis', 'A água usada em atividades industriais', 'A água evaporada durante a produção'],
+    respostaCorreta: 1,
+    explicacao: 'A pegada hídrica cinzenta mede a poluição: é a água necessária para diluir poluentes até padrões aceitáveis. Em Moçambique, o uso de agroquímicos e a mineração aumentam significativamente esta pegada, comprometendo corpos de água.'
   }
 ];
 
@@ -920,7 +1196,7 @@ export const energiasRenovaveis = [
     beneficios: ['Alta eficiência', 'Baixo impacto visual (offshore)', 'Custo competitivo', 'Tecnologia madura'],
     eficiencia: '35-45%',
     custoKwh: '0.02-0.04€',
-    casosReais: ['Portugal: Parque Eólico da Serra da Freita', 'Dinamarca: Horns Rev 3 (407 MW offshore)']
+    casosReais: ['Moçambique: Projeto Eólico de Nacala', 'Dinamarca: Horns Rev 3 (407 MW offshore)']
   },
   {
     id: 'hidroeletrica',
@@ -930,7 +1206,7 @@ export const energiasRenovaveis = [
     beneficios: ['Armazenamento de energia', 'Produção estável', 'Longa vida útil', 'Flexibilidade operacional'],
     eficiencia: '85-95%',
     custoKwh: '0.02-0.03€',
-    casosReais: ['Portugal: Barragem do Alqueva (520 MW)', 'Brasil: Itaipu (14 GW)']
+    casosReais: ['Moçambique: Barragem de Cahora Bassa (2.075 MW)', 'Brasil: Itaipu (14 GW)']
   },
   {
     id: 'biomassa',
@@ -940,7 +1216,7 @@ export const energiasRenovaveis = [
     beneficios: ['Gestão de resíduos', 'Produção contínua', 'Carbono neutro', 'Desenvolvimento rural'],
     eficiencia: '20-35%',
     custoKwh: '0.05-0.08€',
-    casosReais: ['Portugal: Central de Biomassa de Mortágua', 'Suécia: Sistema de aquecimento urbano']
+    casosReais: ['Moçambique: Projeto de Biogás de Maputo', 'Suécia: Sistema de aquecimento urbano']
   }
 ];
 
@@ -1019,3 +1295,7 @@ export const tiposResiduos = [
     solucao: 'Tratamento especial'
   }
 ];
+
+// =====================================================
+// CONSUMO RESPONSÁVEL DE ÁGUA - Quiz Questions
+// =====================================================
