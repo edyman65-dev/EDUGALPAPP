@@ -339,11 +339,13 @@ const QuizSection: React.FC<QuizSectionProps> = ({ onScoreUpdate, onOpenAuth }) 
                   setQuizCompleted(false);
                   setSelectedAnswer(null);
                   setShowResult(false);
+                  setShowConfirm(false);
+                  setPendingAnswer(null);
                 }}
                 className="flex-1 flex items-center justify-center space-x-2 bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-xl font-semibold transition-colors"
               >
                 <ArrowRight className="w-5 h-5" />
-                <span>Repetir</span>
+                <span>Continuar</span>
               </button>
             </div>
           </div>
