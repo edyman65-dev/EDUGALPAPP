@@ -25,6 +25,7 @@ const Header: React.FC<HeaderProps> = ({
     { id: 'renovaveis', label: 'Renováveis', icon: Sun },
     { id: 'carvao-gas', label: 'Carvão vs Gás', icon: Sun },
     { id: 'residuos', label: 'Resíduos', icon: Sun },
+    { id: 'agua', label: 'Água', icon: Sun },
     { id: 'quizzes', label: 'Quizzes', icon: BookOpen },
     { id: 'rankings', label: 'Rankings', icon: Trophy },
     { id: 'certificados', label: 'Certificados', icon: Award },
