@@ -438,10 +438,10 @@ export const quizQuestions: QuizQuestion[] = [
     id: 24,
     tema: 'carvao-gas',
     nivel: 'intermedio',
-    pergunta: 'Qual país ainda depende mais de carvão para eletricidade?',
-    opcoes: ['Alemanha', 'China', 'EUA', 'Índia'],
+    pergunta: 'Qual país africano é o maior produtor de carvão no continente?',
+    opcoes: ['Moçambique', 'África do Sul', 'Zimbabwe', 'Botswana'],
     respostaCorreta: 1,
-    explicacao: 'A China produz mais de 60% da sua eletricidade a partir de carvão, sendo o maior consumidor mundial.'
+    explicacao: 'A África do Sul é o maior produtor de carvão de África, sendo o carvão responsável por mais de 80% da sua geração elétrica. Moçambique tem grandes reservas mas exporta a maior parte.'
   },
   {
     id: 25,
@@ -1165,14 +1165,14 @@ export const rankingUsers: RankingUser[] = [
 ];
 
 export const rankingPaises: RankingPais[] = [
-  { pais: 'Islândia', bandeira: '🇮🇸', percentagemRenovavel: 100, emissoesCO2: 2.8, gestaoResiduos: 92 },
-  { pais: 'Noruega', bandeira: '🇳🇴', percentagemRenovavel: 98, emissoesCO2: 7.5, gestaoResiduos: 95 },
+  { pais: 'Tanzânia', bandeira: '🇹🇿', percentagemRenovavel: 45, emissoesCO2: 0.2, gestaoResiduos: 22 },
+  { pais: 'Zimbabwe', bandeira: '🇿🇼', percentagemRenovavel: 35, emissoesCO2: 0.8, gestaoResiduos: 18 },
   { pais: 'Moçambique', bandeira: '🇲🇿', percentagemRenovavel: 18, emissoesCO2: 0.3, gestaoResiduos: 15 },
   { pais: 'África do Sul', bandeira: '🇿🇦', percentagemRenovavel: 12, emissoesCO2: 7.8, gestaoResiduos: 45 },
   { pais: 'Quénia', bandeira: '🇰🇪', percentagemRenovavel: 90, emissoesCO2: 0.4, gestaoResiduos: 30 },
-  { pais: 'Alemanha', bandeira: '🇩🇪', percentagemRenovavel: 52, emissoesCO2: 8.1, gestaoResiduos: 94 },
-  { pais: 'Espanha', bandeira: '🇪🇸', percentagemRenovavel: 47, emissoesCO2: 5.2, gestaoResiduos: 75 },
-  { pais: 'França', bandeira: '🇫🇷', percentagemRenovavel: 44, emissoesCO2: 4.5, gestaoResiduos: 85 },
+  { pais: 'Zâmbia', bandeira: '🇿🇲', percentagemRenovavel: 85, emissoesCO2: 0.3, gestaoResiduos: 20 },
+  { pais: 'Malawi', bandeira: '🇲🇼', percentagemRenovavel: 28, emissoesCO2: 0.1, gestaoResiduos: 75 },
+  { pais: 'Namibia', bandeira: '🇳🇦', percentagemRenovavel: 55, emissoesCO2: 1.5, gestaoResiduos: 85 },
   { pais: 'Reino Unido', bandeira: '🇬🇧', percentagemRenovavel: 43, emissoesCO2: 5.1, gestaoResiduos: 82 },
   { pais: 'Itália', bandeira: '🇮🇹', percentagemRenovavel: 41, emissoesCO2: 5.4, gestaoResiduos: 79 },
 ];
